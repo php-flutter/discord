@@ -26,6 +26,13 @@ class widget
     }
 
     /**
+     * Renders text/widget
+     */
+    function textOrBuild($arg){
+        if($arg instanceof widget) return $arg->build();
+        echo $arg;
+    }
+    /**
      * Generates HTML attributes from array, ignoring $ignore
      * @param array to be generated from
      * @param array ignoring names
