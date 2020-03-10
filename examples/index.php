@@ -15,6 +15,7 @@ use widgets\widgetList;
 use widgets\clickables\button;
 use widgets\dataholders\title;
 use widgets\dataholders\subtitle;
+use widgets\layout\wrapper;
 
 $document = new Document([
     "head" => new WidgetList([
@@ -22,7 +23,7 @@ $document = new Document([
         new Responsiveness(),
         new Styles()
     ]),
-    "body" => new WidgetList([
+    "body" => new Wrapper(new WidgetList([
         new Title([
             "text" => "Hey there!"
         ]),
@@ -32,7 +33,7 @@ $document = new Document([
         new Button([
             "text" => "Test"
         ])
-    ])
+    ]))
 ]);
 
 $document->build();

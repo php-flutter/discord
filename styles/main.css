@@ -23,6 +23,13 @@ a, abbr, acronym, address, applet, big, blockquote, body, button, caption, cite,
     color: #4f545c;
 }
 
+.layout-wrapper {
+    padding: 15px;
+    left: 5%;
+    right: 5%;
+    top: 10%;
+}
+
 .button {
     font-family: inherit;
     border-radius: 3px;
