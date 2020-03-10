@@ -4,6 +4,10 @@
 
 Simply download widgets and use them as you want. Also don't forget to import styles.
 
+## Documentaion
+
+Documentation can be found in [docs](docs/README.md).
+
 ## Note
 
 This project doesn't need phpflutter to be already present - in fact, this project overwrites few methods and is implementation of phpflutter.
