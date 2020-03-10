@@ -16,6 +16,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, button, caption, cite,
     font-family: inherit;
     font-size: 100%;
     vertical-align: baseline;
+    text-decoration: none;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -124,4 +125,71 @@ a, abbr, acronym, address, applet, big, blockquote, body, button, caption, cite,
     background: url("./svg/separator.svg");
     opacity: .1;
     margin: 34px 0;
+}
+
+.footer {
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.navigation-section {
+    text-align: center;
+    margin: 16px 0;
+    width: 45%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.navigation-header {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 13px;
+    display: block;
+    width: 100%;
+}
+
+.navigation-link {
+    color: hsla(0,0%,100%,.6);
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    display: block;
+}
+
+.navigation-link:hover {
+    color: #fff;
 }
