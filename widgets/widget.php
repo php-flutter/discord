@@ -33,7 +33,12 @@ class widget
      */
     function generateAttributes($array, $ignore = [])
     {
-
+      $attributes = "";
+      foreach($array as $name => $value){
+        if(in_array($name, $ignore))continue;
+        $attributes .= $name . "='" . htmlentities($value) . "'";
+      }
+      return $attributes;
     }
     /**
      * Tries building widget, if the widget was set in settings
