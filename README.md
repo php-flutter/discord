@@ -8,6 +8,11 @@ Simply download widgets and use them as you want. Also don't forget to import st
 
 Documentation can be found in [docs](docs/README.md).
 
+## Examples
+
+Some examples are available in the [examples folder](examples).
+As of now, there are no live examples available, but they can work as kind of "boilerplate" to start with.
+
 ## Note
 
 This project doesn't need phpflutter to be already present - in fact, this project overwrites few methods and is implementation of phpflutter.
