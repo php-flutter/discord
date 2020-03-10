@@ -24,7 +24,9 @@ class document extends widget
             <? $this->tryBuild("head"); ?>
         </head>
         <body>
-            <? $this->tryBuild("body"); ?>
+            <div class="page-wrapper">
+                <? $this->tryBuild("body"); ?>
+            </div>
         </body>
         </html>
         <?
