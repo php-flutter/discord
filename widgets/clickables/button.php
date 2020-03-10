@@ -21,7 +21,7 @@ class button extends widget
      */
     function build(){
         ?>
-            <<?=$this->elmn; ?> class="button button-variant-<?=$this->variant; ?>"><?=$this->textOrBuild($this->text); ?></<?=$this->elmn; ?>
+            <<?=$this->elmn; ?> class="button button-variant-<?=$this->variant; ?>"><?=$this->textOrBuild($this->text); ?></<?=$this->elmn; ?>>
         <?
     }
 
