@@ -7,8 +7,8 @@ use widgets\widget;
 class button extends widget
 {
     /**
-     * Create new document root
-     * @param object containing text and/or variant
+     * New Button widget
+     * @param object containing text and options (element, variant, action and/or attributes)
      */
     function __construct($opt){
         $this->obj = (object) $opt;
@@ -19,17 +19,9 @@ class button extends widget
 
         $this->attributes = $this->generateAttributes($opt, ["element", "variant", "text", "action"]);
     }
-    /**
-     * Build the document
-     */
     function build(){
         ?>
             <<?=$this->elmn; ?> onclick="<?=$this->action; ?>" class="button button-variant-<?=$this->variant; ?>" <?=$this->attributes; ?>><?=$this->textOrBuild($this->text); ?></<?=$this->elmn; ?>>
         <?
-    }
-
-    function textOrBuild($arg){
-        if($arg instanceof widget) return $arg->build();
-        echo $arg;
     }
 }

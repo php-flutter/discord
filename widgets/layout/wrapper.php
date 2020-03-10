@@ -7,15 +7,12 @@ use widgets\widget;
 class wrapper extends widget
 {
     /**
-     * Create new document root
-     * @param object containing text and/or variant
+     * Wraps content for better readability
+     * @param object child to render
      */
-    function __construct($opt){
+    function __construct($opt = []){
         $this->obj = (object) $opt;
     }
-    /**
-     * Build the document
-     */
     function build(){
         ?>
             <div class="layout-wrapper">

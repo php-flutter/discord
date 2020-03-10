@@ -7,15 +7,12 @@ use widgets\widget;
 class title extends widget
 {
     /**
-     * Create new document root
-     * @param array containing head and body
+     * Sets the page title
+     * @param string Title to show
      */
     function __construct($opt){
         $this->title = $opt;
     }
-    /**
-     * Build the document
-     */
     function build(){
         ?>
         <title><?=$this->title; ?></title>
