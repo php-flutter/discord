@@ -20,7 +20,7 @@ class subtitle extends widget
      */
     function build(){
         ?>
-            <h2 class="title <?=$this->variant; ?>"><?=$this->textOrBuild($this->text); ?></h2>
+            <h2 class="title subtitle <?=$this->variant; ?>"><?=$this->textOrBuild($this->text); ?></h2>
         <?
     }
 
