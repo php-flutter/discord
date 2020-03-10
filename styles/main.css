@@ -24,10 +24,13 @@ a, abbr, acronym, address, applet, big, blockquote, body, button, caption, cite,
 }
 
 .layout-wrapper {
-    padding: 15px;
-    left: 5%;
-    right: 5%;
-    top: 10%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+}
+
+.title {
+    margin-bottom: 15px;
 }
 
 .button {
