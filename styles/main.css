@@ -82,3 +82,8 @@ a, abbr, acronym, address, applet, big, blockquote, body, button, caption, cite,
     background-color: #7289da;
     color: white;
 }
+
+.button-variant-white {
+    color: black;
+    background-color: white;
+}
