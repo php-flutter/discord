@@ -117,3 +117,11 @@ a, abbr, acronym, address, applet, big, blockquote, body, button, caption, cite,
     color: black;
     background-color: white;
 }
+
+.separator {
+    height: 1px;
+    width: 100%;
+    background: url("./svg/separator.svg");
+    opacity: .1;
+    margin: 34px 0;
+}
