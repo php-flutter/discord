@@ -12,6 +12,7 @@ use widgets\head\title;
 use widgets\head\responsiveness;
 use widgets\head\styles;
 use widgets\widgetList;
+use widgets\clickables\button;
 
 $document = new Document([
     "head" => new WidgetList([
@@ -19,9 +20,11 @@ $document = new Document([
         new Responsiveness(),
         new Styles()
     ]),
-    "body" => [
-
-    ]
+    "body" => new WidgetList([
+        new Button([
+            "text" => "Test"
+        ])
+    ])
 ]);
 
 $document->build();

@@ -1,0 +1,11 @@
+.button {
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+    height: 45px;
+}
+
+.button-variant-blue {
+    background-color: #7289da;
+    color: white;
+}
